@@ -11,5 +11,6 @@ final class PolymorphicList
     public function __construct(
         /** @var class-string<PolymorphicDto> */
         public readonly string $name,
-    ) {}
+    ) {
+    }
 }

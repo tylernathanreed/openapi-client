@@ -5,7 +5,6 @@ namespace Reedware\OpenApi\Client\Http;
 use DateTimeImmutable;
 use Reedware\OpenApi\Client\Http\Attributes\PolymorphicList;
 use Reedware\OpenApi\Client\Http\Exceptions\DeserializationException;
-use Reedware\OpenApi\Client\Http\PolymorphicDto;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
@@ -109,7 +108,7 @@ class Deserializer
             } elseif ($type->getName() === DateTimeImmutable::class && is_string($value)) {
                 $args[] = new DateTimeImmutable($value);
             } elseif ($type->getName() === DateTimeImmutable::class && is_int($value)) {
-                $args[] = (new DateTimeImmutable)->setTimestamp($value);
+                $args[] = (new DateTimeImmutable())->setTimestamp($value);
             } elseif (! $type->isBuiltin() && is_subclass_of($type->getName(), Dto::class) && is_array($value)) {
                 // @phpstan-ignore argument.type
                 $args[] = $this->from($type->getName(), $value);

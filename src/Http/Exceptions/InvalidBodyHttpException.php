@@ -2,4 +2,6 @@
 
 namespace Reedware\OpenApi\Client\Http\Exceptions;
 
-class InvalidBodyHttpException extends HttpException {}
+class InvalidBodyHttpException extends HttpException
+{
+}

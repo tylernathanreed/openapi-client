@@ -21,12 +21,13 @@ class PendingOperation
 
         /** @var array<string,int|string> */
         public array $path = [],
-    ) {}
+    ) {
+    }
 
     public function getExpandedUri(): string
     {
         return strtr($this->uri, array_combine(
-            keys: array_map(fn($v) => "{{$v}}", array_keys($this->path)),
+            keys: array_map(fn ($v) => "{{$v}}", array_keys($this->path)),
             values: array_values($this->path),
         ));
     }

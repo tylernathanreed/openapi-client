@@ -11,7 +11,8 @@ class Processor
 {
     public function __construct(
         protected Deserializer $deserializer
-    ) {}
+    ) {
+    }
 
     /**
      * @param array{0:class-string<Dto>}|class-string<Dto>|true $schema

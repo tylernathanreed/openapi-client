@@ -37,7 +37,7 @@ class Client
 
     /**
      * @phpstan-template TDto of Dto
-     * 
+     *
      * @param 'get'|'post'|'put'|'patch'|'delete' $method
      * @param array{0:class-string<TDto>}|class-string<TDto>|true $schema
      * @param Dto|array<string,mixed> $body

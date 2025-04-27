@@ -2,4 +2,6 @@
 
 namespace Reedware\OpenApi\Client\Http\Exceptions;
 
-class MethodNotAllowedHttpException extends HttpException {}
+class MethodNotAllowedHttpException extends HttpException
+{
+}

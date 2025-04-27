@@ -9,7 +9,7 @@ class TransporterFactory
     public static function make(): Transporter
     {
         return class_exists('GuzzleHttp\Client')
-            ? new GuzzleTransporter
-            : new CurlTransporter;
+            ? new GuzzleTransporter()
+            : new CurlTransporter();
     }
 }

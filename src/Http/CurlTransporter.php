@@ -4,7 +4,6 @@ namespace Reedware\OpenApi\Client\Http;
 
 use CurlHandle;
 use Reedware\OpenApi\Client\Configuration;
-use Reedware\OpenApi\Client\Http\Transporter;
 
 class CurlTransporter extends Transporter
 {
