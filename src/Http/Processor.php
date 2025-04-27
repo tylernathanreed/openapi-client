@@ -1,11 +1,11 @@
 <?php
 
-namespace Jira\Client\Http;
+namespace Reedware\OpenApi\Client\Http;
 
-use Jira\Client\Http\Exceptions\InvalidBodyHttpException;
-use Jira\Client\Http\Exceptions\MethodNotAllowedHttpException;
-use Jira\Client\Http\Exceptions\NotFoundHttpException;
-use Jira\Client\Http\Exceptions\UnsupportedStatusCodeHttpException;
+use Reedware\OpenApi\Client\Http\Exceptions\InvalidBodyHttpException;
+use Reedware\OpenApi\Client\Http\Exceptions\MethodNotAllowedHttpException;
+use Reedware\OpenApi\Client\Http\Exceptions\NotFoundHttpException;
+use Reedware\OpenApi\Client\Http\Exceptions\UnsupportedStatusCodeHttpException;
 
 class Processor
 {

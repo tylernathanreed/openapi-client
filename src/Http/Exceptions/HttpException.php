@@ -1,8 +1,8 @@
 <?php
 
-namespace Jira\Client\Http\Exceptions;
+namespace Reedware\OpenApi\Client\Http\Exceptions;
 
-use Jira\Client\Http\Response;
+use Reedware\OpenApi\Client\Http\Response;
 use RuntimeException;
 use Throwable;
 
